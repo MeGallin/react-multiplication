@@ -1,0 +1,173 @@
+@import '../../index.scss';
+
+$bg-colour-X1: yellow;
+$bg-colour-X2: rgba(255, 165, 0, 1);
+$bg-colour-X3: rgba(250, 128, 114, 1);
+$bg-colour-X4: rgba(255, 192, 203, 1);
+$bg-colour-X5: rgba(129, 69, 129, 1);
+$bg-colour-X6: rgba(255, 160, 122, 1);
+$bg-colour-X7: rgba(67, 94, 82, 1);
+$bg-colour-X8: rgba(23, 132, 84, 1);
+$bg-colour-X9: rgba(32, 197, 181, 1);
+$bg-colour-X10: rgba(188, 223, 235, 1);
+$bg-colour-X11: rgba(67, 94, 82, 0.5);
+$bg-colour-X12: rgba(129, 69, 129, 0.4);
+
+.times-table__wrapper {
+  height: calc(100vh - (#{$footer-height} + #{$header-height}));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+
+    .child {
+      flex: 1 0 8%;
+      height: calc((100vh / 6.6) - (#{$footer-height} + #{$header-height}));
+      border: white 2px solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8em;
+      opacity: 0.7;
+      &:hover {
+        opacity: 1;
+      }
+
+      &:nth-child(1) {
+        background-color: $bg-colour-X1;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(13),
+      &:nth-child(14) {
+        background-color: $bg-colour-X2;
+      }
+
+      &:nth-child(3),
+      &:nth-child(15),
+      &:nth-child(25),
+      &:nth-child(26),
+      &:nth-child(27) {
+        background-color: $bg-colour-X3;
+      }
+
+      &:nth-child(4),
+      &:nth-child(16),
+      &:nth-child(28),
+      &:nth-child(n + 37) {
+        background-color: $bg-colour-X4;
+      }
+
+      &:nth-child(5),
+      &:nth-child(17),
+      &:nth-child(29),
+      &:nth-child(41),
+      &:nth-child(n + 49) {
+        background-color: $bg-colour-X5;
+      }
+
+      &:nth-child(6),
+      &:nth-child(18),
+      &:nth-child(30),
+      &:nth-child(42),
+      &:nth-child(54),
+      &:nth-child(67),
+      &:nth-child(n + 61) {
+        background-color: $bg-colour-X6;
+      }
+
+      &:nth-child(7),
+      &:nth-child(19),
+      &:nth-child(31),
+      &:nth-child(43),
+      &:nth-child(55),
+      &:nth-child(67),
+      &:nth-child(79),
+      &:nth-child(n + 73) {
+        background-color: $bg-colour-X7;
+      }
+
+      &:nth-child(8),
+      &:nth-child(20),
+      &:nth-child(32),
+      &:nth-child(44),
+      &:nth-child(56),
+      &:nth-child(68),
+      &:nth-child(80),
+      &:nth-child(92),
+      &:nth-child(n + 85) {
+        background-color: $bg-colour-X8;
+      }
+
+      &:nth-child(9),
+      &:nth-child(21),
+      &:nth-child(33),
+      &:nth-child(45),
+      &:nth-child(57),
+      &:nth-child(69),
+      &:nth-child(81),
+      &:nth-child(93),
+      &:nth-child(n + 97) {
+        background-color: $bg-colour-X9;
+      }
+
+      &:nth-child(10),
+      &:nth-child(22),
+      &:nth-child(34),
+      &:nth-child(46),
+      &:nth-child(58),
+      &:nth-child(60),
+      &:nth-child(70),
+      &:nth-child(82),
+      &:nth-child(94),
+      &:nth-child(106),
+      &:nth-child(118),
+      &:nth-child(n + 109) {
+        background-color: $bg-colour-X10;
+      }
+      &:nth-child(11),
+      &:nth-child(23),
+      &:nth-child(35),
+      &:nth-child(47),
+      &:nth-child(59),
+      &:nth-child(71),
+      &:nth-child(83),
+      &:nth-child(95),
+      &:nth-child(107),
+      &:nth-child(119),
+      &:nth-child(n + 121) {
+        background-color: $bg-colour-X11;
+      }
+      &:nth-child(12),
+      &:nth-child(24),
+      &:nth-child(36),
+      &:nth-child(48),
+      &:nth-child(60),
+      &:nth-child(72),
+      &:nth-child(84),
+      &:nth-child(96),
+      &:nth-child(108),
+      &:nth-child(120),
+      &:nth-child(132),
+      &:nth-child(n + 133) {
+        background-color: $bg-colour-X12;
+      }
+    }
+  }
+  .cursor {
+    transform: scale(5.5);
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    text-align: center;
+  }
+}
